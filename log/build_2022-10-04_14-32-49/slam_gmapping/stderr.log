@@ -1,0 +1,9 @@
+ -fuse-ld=lld -Wl,--disable-new-dtags
+[01m[K/home/hjf/auto/rplidar-ros2/src/slam_gmapping/src/scan_dilute.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/laser_scan__struct.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<sensor_msgs/msg/laser_scan__struct.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/scan_dilute.dir/build.make:63：CMakeFiles/scan_dilute.dir/src/scan_dilute.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:82：CMakeFiles/scan_dilute.dir/all] 错误 2
+make[1]: *** 正在等待未完成的任务....
+make: *** [Makefile:141：all] 错误 2

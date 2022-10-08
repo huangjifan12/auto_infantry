@@ -1,0 +1,30 @@
+[35m[1mScanning dependencies of target scan_dilute[0m
+[ 33%] Built target slam_gmapping
+[ 66%] Built target transform
+[ 83%] [32mBuilding CXX object CMakeFiles/scan_dilute.dir/src/scan_dilute.cpp.o[0m
+[100%] [32m[1mLinking CXX executable scan_dilute[0m
+[100%] Built target scan_dilute
+-- Install configuration: ""
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+-- Set runtime path of "/home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/slam_gmapping" to ""
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/transform
+-- Set runtime path of "/home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/transform" to ""
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/scan_dilute
+-- Set runtime path of "/home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/scan_dilute" to ""
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/launch
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/package.dsv
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+-- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/package.xml

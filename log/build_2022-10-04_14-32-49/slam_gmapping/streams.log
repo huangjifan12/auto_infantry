@@ -1,0 +1,79 @@
+[0.012s] Invoking command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping': AMENT_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy LD_LIBRARY_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/hjf/auto/rplidar-ros2/src/slam_gmapping -DCMAKE_INSTALL_PREFIX=/home/hjf/auto/rplidar-ros2/install/slam_gmapping
+[0.083s] -- The C compiler identification is GNU 9.4.0
+[0.155s] -- The CXX compiler identification is GNU 9.4.0
+[0.161s] -- Check for working C compiler: /usr/bin/cc
+[0.252s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.254s] -- Detecting C compiler ABI info
+[0.340s] -- Detecting C compiler ABI info - done
+[0.362s] -- Detecting C compile features
+[0.362s] -- Detecting C compile features - done
+[0.367s] -- Check for working CXX compiler: /usr/bin/c++
+[0.467s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.469s] -- Detecting CXX compiler ABI info
+[0.568s] -- Detecting CXX compiler ABI info - done
+[0.585s] -- Detecting CXX compile features
+[0.586s] -- Detecting CXX compile features - done
+[0.587s]  -fuse-ld=lld -Wl,--disable-new-dtags
+[0.590s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.622s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.623s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.897s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.944s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.955s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.073s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.125s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.256s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.334s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.533s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[1.553s] -- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.639s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.641s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.642s] -- Looking for pthread.h
+[1.745s] -- Looking for pthread.h - found
+[1.745s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.839s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.839s] -- Looking for pthread_create in pthreads
+[1.909s] -- Looking for pthread_create in pthreads - not found
+[1.909s] -- Looking for pthread_create in pthread
+[1.995s] -- Looking for pthread_create in pthread - found
+[1.996s] -- Found Threads: TRUE  
+[2.683s] -- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[2.696s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[2.702s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[2.741s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.842s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[2.945s] -- Found openslam_gmapping: 0.1.2 (/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/cmake)
+[2.949s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.052s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.052s] -- Configured cppcheck include dirs: /home/hjf/auto/rplidar-ros2/src/slam_gmapping/include
+[3.053s] -- Configured cppcheck exclude dirs and/or files: 
+[3.053s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.054s] -- Added test 'lint_cmake' to check CMake code style
+[3.055s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.056s] -- Added test 'uncrustify' to check C / C++ code style
+[3.056s] -- Configured uncrustify additional arguments: 
+[3.057s] -- Added test 'xmllint' to check XML markup files
+[3.060s] -- Configuring done
+[3.094s] -- Generating done
+[3.096s] -- Build files have been written to: /home/hjf/auto/rplidar-ros2/build/slam_gmapping
+[3.111s] Invoked command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping' returned '0': AMENT_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy LD_LIBRARY_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/hjf/auto/rplidar-ros2/src/slam_gmapping -DCMAKE_INSTALL_PREFIX=/home/hjf/auto/rplidar-ros2/install/slam_gmapping
+[3.112s] Invoking command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping': AMENT_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy LD_LIBRARY_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/slam_gmapping -- -j8 -l8
+[3.159s] [35m[1mScanning dependencies of target slam_gmapping[0m
+[3.159s] [35m[1mScanning dependencies of target scan_dilute[0m
+[3.159s] [35m[1mScanning dependencies of target transform[0m
+[3.199s] [ 16%] [32mBuilding CXX object CMakeFiles/scan_dilute.dir/src/scan_dilute.cpp.o[0m
+[3.207s] [01m[K/home/hjf/auto/rplidar-ros2/src/slam_gmapping/src/scan_dilute.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/laser_scan__struct.hpp: 没有那个文件或目录
+[3.207s]     1 | #include [01;31m[K<sensor_msgs/msg/laser_scan__struct.hpp>[m[K
+[3.207s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.207s] compilation terminated.
+[3.208s] make[2]: *** [CMakeFiles/scan_dilute.dir/build.make:63：CMakeFiles/scan_dilute.dir/src/scan_dilute.cpp.o] 错误 1
+[3.208s] make[1]: *** [CMakeFiles/Makefile2:82：CMakeFiles/scan_dilute.dir/all] 错误 2
+[3.208s] make[1]: *** 正在等待未完成的任务....
+[3.235s] [ 33%] [32mBuilding CXX object CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o[0m
+[3.235s] [ 50%] [32mBuilding CXX object CMakeFiles/transform.dir/src/transform.cpp.o[0m
+[8.595s] [ 66%] [32m[1mLinking CXX executable transform[0m
+[8.984s] [ 66%] Built target transform
+[15.628s] [ 83%] [32m[1mLinking CXX executable slam_gmapping[0m
+[16.348s] [ 83%] Built target slam_gmapping
+[16.349s] make: *** [Makefile:141：all] 错误 2
+[16.351s] Invoked command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping' returned '2': AMENT_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy LD_LIBRARY_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/slam_gmapping -- -j8 -l8

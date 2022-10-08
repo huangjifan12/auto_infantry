@@ -1,0 +1,866 @@
+[0.000000] (-) TimerEvent: {}
+[0.000360] (openslam_gmapping) JobQueued: {'identifier': 'openslam_gmapping', 'dependencies': OrderedDict()}
+[0.000508] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.000557] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('openslam_gmapping', '/home/hjf/auto/rplidar-ros2/install/openslam_gmapping')])}
+[0.000919] (openslam_gmapping) JobStarted: {'identifier': 'openslam_gmapping'}
+[0.016489] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[0.029107] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'cmake'}
+[0.029225] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/hjf/auto/rplidar-ros2/src/openslam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping'], 'cwd': '/home/hjf/auto/rplidar-ros2/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'hjf'), ('SSH_AGENT_PID', '1786'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hjf'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1606'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hjf'), ('JOURNAL_STREAM', '8:47612'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hjf-NBLB-WAX9N:@/tmp/.ICE-unix/1824,unix/hjf-NBLB-WAX9N:/tmp/.ICE-unix/1824'), ('INVOCATION_ID', '9ecbbc03209e48358979a7501984b25c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44f8e9c8_c694_4733_afbc_ec358c295741'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hjf/auto/rplidar-ros2/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.036310] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[0.036590] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/hjf/auto/rplidar-ros2/src/sllidar_ros2', '-DCMAKE_INSTALL_PREFIX=/home/hjf/auto/rplidar-ros2/install/sllidar_ros2'], 'cwd': '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'hjf'), ('SSH_AGENT_PID', '1786'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hjf'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1606'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hjf'), ('JOURNAL_STREAM', '8:47612'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hjf-NBLB-WAX9N:@/tmp/.ICE-unix/1824,unix/hjf-NBLB-WAX9N:/tmp/.ICE-unix/1824'), ('INVOCATION_ID', '9ecbbc03209e48358979a7501984b25c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44f8e9c8_c694_4733_afbc_ec358c295741'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099444] (-) TimerEvent: {}
+[0.175594] (sllidar_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.175940] (openslam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199524] (-) TimerEvent: {}
+[0.283401] (sllidar_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.283615] (openslam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.292097] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.292296] (sllidar_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.299619] (-) TimerEvent: {}
+[0.370510] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.370770] (sllidar_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.372072] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.372326] (sllidar_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399729] (-) TimerEvent: {}
+[0.446848] (sllidar_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.449709] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.461716] (sllidar_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.462388] (sllidar_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.464951] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.465327] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.466945] (sllidar_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.468320] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.499874] (-) TimerEvent: {}
+[0.556908] (sllidar_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.557240] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.558519] (sllidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.558926] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.599968] (-) TimerEvent: {}
+[0.647946] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.648246] (sllidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.663349] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.663935] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.665326] (sllidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.665919] (sllidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.667085] (openslam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.669455] (sllidar_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.698587] (sllidar_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.698785] (sllidar_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.700036] (-) TimerEvent: {}
+[0.700251] (openslam_gmapping) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.700483] (openslam_gmapping) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.800129] (-) TimerEvent: {}
+[0.900399] (-) TimerEvent: {}
+[0.981450] (sllidar_ros2) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.000482] (-) TimerEvent: {}
+[1.052611] (sllidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.064771] (sllidar_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.085351] (openslam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.100575] (-) TimerEvent: {}
+[1.107458] (openslam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[1.109675] (openslam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/hjf/auto/rplidar-ros2/build/openslam_gmapping\n'}
+[1.114344] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[1.116065] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'build'}
+[1.116483] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hjf/auto/rplidar-ros2/build/openslam_gmapping', '--', '-j8', '-l8'], 'cwd': '/home/hjf/auto/rplidar-ros2/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'hjf'), ('SSH_AGENT_PID', '1786'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hjf'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1606'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hjf'), ('JOURNAL_STREAM', '8:47612'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hjf-NBLB-WAX9N:@/tmp/.ICE-unix/1824,unix/hjf-NBLB-WAX9N:/tmp/.ICE-unix/1824'), ('INVOCATION_ID', '9ecbbc03209e48358979a7501984b25c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44f8e9c8_c694_4733_afbc_ec358c295741'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hjf/auto/rplidar-ros2/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.162557] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target utils\x1b[0m\n'}
+[1.162803] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_base\x1b[0m\n'}
+[1.177924] (openslam_gmapping) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o\x1b[0m\n'}
+[1.178178] (openslam_gmapping) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o\x1b[0m\n'}
+[1.178297] (openslam_gmapping) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o\x1b[0m\n'}
+[1.179739] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o\x1b[0m\n'}
+[1.181874] (sllidar_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.200903] (-) TimerEvent: {}
+[1.231547] (sllidar_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.300967] (-) TimerEvent: {}
+[1.374243] (sllidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.401073] (-) TimerEvent: {}
+[1.498200] (sllidar_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.501176] (-) TimerEvent: {}
+[1.503648] (sllidar_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.506397] (sllidar_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.556312] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX static library libsensor_base.a\x1b[0m\n'}
+[1.601305] (-) TimerEvent: {}
+[1.603256] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] Built target sensor_base\n'}
+[1.612396] (sllidar_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.612751] (sllidar_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.619337] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_odometry\x1b[0m\n'}
+[1.623211] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_range\x1b[0m\n'}
+[1.642810] (openslam_gmapping) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o\x1b[0m\n'}
+[1.643195] (openslam_gmapping) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o\x1b[0m\n'}
+[1.644808] (openslam_gmapping) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o\x1b[0m\n'}
+[1.646557] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o\x1b[0m\n'}
+[1.701400] (-) TimerEvent: {}
+[1.763037] (sllidar_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.763611] (sllidar_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.797191] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[1.801541] (-) TimerEvent: {}
+[1.859134] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] Built target utils\n'}
+[1.885301] (sllidar_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.885866] (sllidar_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.901621] (-) TimerEvent: {}
+[1.998448] (sllidar_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.000355] (sllidar_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.002046] (-) TimerEvent: {}
+[2.102325] (-) TimerEvent: {}
+[2.138877] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libsensor_odometry.a\x1b[0m\n'}
+[2.182191] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] Built target sensor_odometry\n'}
+[2.202453] (-) TimerEvent: {}
+[2.303035] (-) TimerEvent: {}
+[2.322718] (sllidar_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.374854] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX static library libsensor_range.a\x1b[0m\n'}
+[2.403155] (-) TimerEvent: {}
+[2.411201] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] Built target sensor_range\n'}
+[2.422530] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target scanmatcher\x1b[0m\n'}
+[2.442709] (openslam_gmapping) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o\x1b[0m\n'}
+[2.443771] (openslam_gmapping) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o\x1b[0m\n'}
+[2.444218] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o\x1b[0m\n'}
+[2.446183] (openslam_gmapping) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o\x1b[0m\n'}
+[2.503257] (-) TimerEvent: {}
+[2.503636] (sllidar_ros2) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[2.603363] (-) TimerEvent: {}
+[2.681000] (sllidar_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.703438] (-) TimerEvent: {}
+[2.716363] (sllidar_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.719631] (sllidar_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/hjf/auto/rplidar-ros2/build/sllidar_ros2\n'}
+[2.736709] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[2.741919] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[2.742282] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2', '--', '-j8', '-l8'], 'cwd': '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'hjf'), ('SSH_AGENT_PID', '1786'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hjf'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1606'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hjf'), ('JOURNAL_STREAM', '8:47612'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hjf-NBLB-WAX9N:@/tmp/.ICE-unix/1824,unix/hjf-NBLB-WAX9N:/tmp/.ICE-unix/1824'), ('INVOCATION_ID', '9ecbbc03209e48358979a7501984b25c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44f8e9c8_c694_4733_afbc_ec358c295741'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.803578] (-) TimerEvent: {}
+[2.824399] (sllidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sllidar_node\x1b[0m\n'}
+[2.828522] (sllidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sllidar_client\x1b[0m\n'}
+[2.903719] (-) TimerEvent: {}
+[2.982662] (sllidar_ros2) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o\x1b[0m\n'}
+[2.984453] (sllidar_ros2) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o\x1b[0m\n'}
+[2.992796] (sllidar_ros2) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o\x1b[0m\n'}
+[2.993188] (sllidar_ros2) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o\x1b[0m\n'}
+[2.994193] (sllidar_ros2) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o\x1b[0m\n'}
+[3.003824] (-) TimerEvent: {}
+[3.005953] (sllidar_ros2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o\x1b[0m\n'}
+[3.009329] (sllidar_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o\x1b[0m\n'}
+[3.083747] (sllidar_ros2) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o\x1b[0m\n'}
+[3.104157] (-) TimerEvent: {}
+[3.126295] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:47\x1b[m\x1b[K,\n'}
+[3.126891] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[3.127064] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/hal/assert.h:1:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knull character(s) ignored\n'}
+[3.127190] (sllidar_ros2) StderrLine: {'line': b'    1 | \x1b[01;35m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                        \n'}
+[3.127319] (sllidar_ros2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.130213] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[3.130498] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_crc.h:36\x1b[m\x1b[K,\n'}
+[3.130630] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_crc.cpp:33\x1b[m\x1b[K:\n'}
+[3.130752] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[3.130912] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[3.131116] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.131746] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_crc.h:36\x1b[m\x1b[K,\n'}
+[3.131933] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_crc.cpp:33\x1b[m\x1b[K:\n'}
+[3.132174] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[3.132306] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[3.132441] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.132884] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_crc.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Ksl_u32 sl::crc32::cal(sl_u32, void*, sl_u16)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.133047] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_crc.cpp:77:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K-\x1b[m\x1b[K\xe2\x80\x99 in operand of \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[3.133183] (sllidar_ros2) StderrLine: {'line': b'   77 |         sl_u8 leftBytes = \x1b[01;35m\x1b[K4 - len\x1b[m\x1b[K & 0x3;\n'}
+[3.133313] (sllidar_ros2) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~^~~~~\x1b[m\x1b[K\n'}
+[3.182700] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:47\x1b[m\x1b[K,\n'}
+[3.183189] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[3.183625] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knull character(s) ignored\n'}
+[3.183872] (sllidar_ros2) StderrLine: {'line': b'    1 | \x1b[01;35m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                        \n'}
+[3.184295] (sllidar_ros2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.195521] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:37\x1b[m\x1b[K:\n'}
+[3.195741] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knull character(s) ignored\n'}
+[3.195873] (sllidar_ros2) StderrLine: {'line': b'    1 | \x1b[01;35m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                        \n'}
+[3.196013] (sllidar_ros2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.204249] (-) TimerEvent: {}
+[3.223089] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:47\x1b[m\x1b[K,\n'}
+[3.223345] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[3.223472] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/hal/assert.h:1:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knull character(s) ignored\n'}
+[3.223576] (sllidar_ros2) StderrLine: {'line': b'    1 | \x1b[01;35m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                        \n'}
+[3.223692] (sllidar_ros2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.229748] (sllidar_ros2) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o\x1b[0m\n'}
+[3.304500] (-) TimerEvent: {}
+[3.405028] (-) TimerEvent: {}
+[3.413818] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:47\x1b[m\x1b[K,\n'}
+[3.414179] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[3.414442] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knull character(s) ignored\n'}
+[3.414688] (sllidar_ros2) StderrLine: {'line': b'    1 | \x1b[01;35m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                        \n'}
+[3.415072] (sllidar_ros2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.432915] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:37\x1b[m\x1b[K:\n'}
+[3.433607] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knull character(s) ignored\n'}
+[3.434102] (sllidar_ros2) StderrLine: {'line': b'    1 | \x1b[01;35m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                        \n'}
+[3.434396] (sllidar_ros2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.505165] (-) TimerEvent: {}
+[3.605972] (-) TimerEvent: {}
+[3.706628] (-) TimerEvent: {}
+[3.807305] (-) TimerEvent: {}
+[3.884380] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[3.884630] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[3.884782] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[3.884914] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[3.885034] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[3.885231] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[3.885372] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.885644] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[3.886064] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[3.887165] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[3.888254] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[3.889294] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[3.890566] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[3.890903] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.907422] (-) TimerEvent: {}
+[3.917738] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[3.918232] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[3.919382] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[3.920655] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[3.921624] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[3.922035] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[3.922608] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.922957] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[3.923155] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[3.923376] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[3.923643] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[3.923911] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[3.924336] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[3.924565] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.924722] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.924866] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:97:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.925012] (sllidar_ros2) StderrLine: {'line': b'   97 | bool raw_serial::open(const char * portname, uint32_t baudrate, \x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K)\n'}
+[3.925154] (sllidar_ros2) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.925313] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::flush(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.925461] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:281:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.925609] (sllidar_ros2) StderrLine: {'line': b'  281 | void raw_serial::flush( \x1b[01;35m\x1b[K_u32 flags\x1b[m\x1b[K)\n'}
+[3.925750] (sllidar_ros2) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.925881] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.926032] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:286:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.926169] (sllidar_ros2) StderrLine: {'line': b'  286 | int raw_serial::waitforsent(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[3.926289] (sllidar_ros2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[3.926422] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.926562] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:292:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.926688] (sllidar_ros2) StderrLine: {'line': b'  292 | int raw_serial::waitforrecv(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[3.926814] (sllidar_ros2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[3.997724] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[3.997971] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[3.998137] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[3.998276] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[3.998423] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[3.998571] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[3.998701] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.998956] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[3.999111] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[3.999241] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[3.999365] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[3.999490] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[3.999636] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[3.999761] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.007535] (-) TimerEvent: {}
+[4.024536] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/hal/thread.cpp:43\x1b[m\x1b[K:\n'}
+[4.024811] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.024970] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:48:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcast between incompatible function types from \xe2\x80\x98\x1b[01m\x1b[Kthread_proc_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wcast-function-type\x1b[m\x1b[K]\n'}
+[4.025126] (sllidar_ros2) StderrLine: {'line': b'   48 |     pthread_create((pthread_t *)&newborn._handle, NULL, (void * (*)(void *))\x1b[01;35m\x1b[Kproc\x1b[m\x1b[K, data);\n'}
+[4.025253] (sllidar_ros2) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.026971] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::hal::Thread::join(long unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.027242] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:129:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.027389] (sllidar_ros2) StderrLine: {'line': b'  129 | u_result Thread::join(\x1b[01;35m\x1b[Kunsigned long timeout\x1b[m\x1b[K)\n'}
+[4.027524] (sllidar_ros2) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[4.032782] (sllidar_ros2) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o\x1b[0m\n'}
+[4.083793] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:33:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#pragma once in main file\n'}
+[4.084233] (sllidar_ros2) StderrLine: {'line': b'   33 | #pragma \x1b[01;35m\x1b[Konce\x1b[m\x1b[K\n'}
+[4.084404] (sllidar_ros2) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.084528] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::net::SocketAddress::getAddressAsString(char*, size_t) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.084658] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:170:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kordered comparison of pointer with integer zero [\x1b[01;35m\x1b[K-Wextra\x1b[m\x1b[K]\n'}
+[4.084774] (sllidar_ros2) StderrLine: {'line': b'  170 |     return ans<=\x1b[01;35m\x1b[K0\x1b[m\x1b[K?RESULT_OPERATION_FAIL:RESULT_OK;\n'}
+[4.084885] (sllidar_ros2) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.093953] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.094242] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:438:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.094454] (sllidar_ros2) StderrLine: {'line': b'  438 |         if (\x1b[01;35m\x1b[Kans == (int)len\x1b[m\x1b[K) {\n'}
+[4.094609] (sllidar_ros2) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.100918] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/arch/linux/arch_linux.h:42\x1b[m\x1b[K,\n'}
+[4.101180] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:41\x1b[m\x1b[K,\n'}
+[4.101331] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[4.101471] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.101615] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:726:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.101751] (sllidar_ros2) StderrLine: {'line': b'  726 |             assert(\x1b[01;35m\x1b[Kans == (int)len\x1b[m\x1b[K);\n'}
+[4.101880] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.107640] (-) TimerEvent: {}
+[4.123704] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.123994] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:67:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.124122] (sllidar_ros2) StderrLine: {'line': b'   67 |     u_result RPlidarDriver::connect(const char *path, _u32 portOrBaud, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[4.124247] (sllidar_ros2) StderrLine: {'line': b'      |                                                                        \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.124451] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::reset(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.124608] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:101:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.124737] (sllidar_ros2) StderrLine: {'line': b'  101 |     u_result RPlidarDriver::reset(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[4.124859] (sllidar_ros2) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[4.125420] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.125624] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:175:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knodebuffer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.125751] (sllidar_ros2) StderrLine: {'line': b'  175 |     u_result RPlidarDriver::getScanDataWithInterval(\x1b[01;35m\x1b[Krplidar_response_measurement_node_t * nodebuffer\x1b[m\x1b[K, size_t & count)\n'}
+[4.125871] (sllidar_ros2) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.125994] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:175:112:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcount\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.126117] (sllidar_ros2) StderrLine: {'line': b'  175 |     u_result RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t * nodebuffer, \x1b[01;35m\x1b[Ksize_t & count\x1b[m\x1b[K)\n'}
+[4.126238] (sllidar_ros2) StderrLine: {'line': b'      |                                                                                                       \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[4.184747] (sllidar_ros2) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o\x1b[0m\n'}
+[4.207738] (-) TimerEvent: {}
+[4.210937] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:722:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knonnull argument \xe2\x80\x98\x1b[01m\x1b[Ktarget\x1b[m\x1b[K\xe2\x80\x99 compared to NULL [\x1b[01;35m\x1b[K-Wnonnull-compare\x1b[m\x1b[K]\n'}
+[4.211176] (sllidar_ros2) StderrLine: {'line': b'  722 |         const struct sockaddr* addr = &target \x1b[01;35m\x1b[K?\x1b[m\x1b[K reinterpret_cast<const struct sockaddr*>(target.getPlatformData()) : NULL;\n'}
+[4.211296] (sllidar_ros2) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.213464] (sllidar_ros2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o\x1b[0m\n'}
+[4.228296] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:33:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#pragma once in main file\n'}
+[4.228645] (sllidar_ros2) StderrLine: {'line': b'   33 | #pragma \x1b[01;35m\x1b[Konce\x1b[m\x1b[K\n'}
+[4.228813] (sllidar_ros2) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.264585] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:33:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#pragma once in main file\n'}
+[4.264835] (sllidar_ros2) StderrLine: {'line': b'   33 | #pragma \x1b[01;35m\x1b[Konce\x1b[m\x1b[K\n'}
+[4.264967] (sllidar_ros2) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.284124] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[4.284341] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[4.284453] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[4.284564] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[4.284677] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.284790] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.284897] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.285997] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[4.286196] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[4.286325] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[4.286434] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[4.286547] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.286663] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.286767] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.307854] (-) TimerEvent: {}
+[4.408250] (-) TimerEvent: {}
+[4.508610] (-) TimerEvent: {}
+[4.585340] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::reset(sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.585705] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:273:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.585881] (sllidar_ros2) StderrLine: {'line': b'  273 |         sl_result reset(\x1b[01;35m\x1b[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[4.586022] (sllidar_ros2) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.590860] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getAllSupportedScanModes(std::vector<sl::LidarScanMode>&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.591277] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:286:89:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.591529] (sllidar_ros2) StderrLine: {'line': b'  286 |         sl_result getAllSupportedScanModes(std::vector<LidarScanMode>& outModes, \x1b[01;35m\x1b[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[4.591720] (sllidar_ros2) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.593247] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::startScan(bool, bool, sl_u32, sl::LidarScanMode*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.593638] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:347:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Koptions\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.593879] (sllidar_ros2) StderrLine: {'line': b'  347 |         sl_result startScan(bool force, bool useTypicalScan, \x1b[01;35m\x1b[Ksl_u32 options = 0\x1b[m\x1b[K, LidarScanMode* outUsedScanMode = nullptr)\n'}
+[4.594071] (sllidar_ros2) StderrLine: {'line': b'      |                                                              \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.599338] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::stop(sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.599722] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:534:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.599921] (sllidar_ros2) StderrLine: {'line': b'  534 |         sl_result stop(\x1b[01;35m\x1b[Ksl_u32 timeout = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[4.600075] (sllidar_ros2) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.600662] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getDeviceInfo(sl_lidar_response_device_info_t&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.600910] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:579:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.601069] (sllidar_ros2) StderrLine: {'line': b'  579 |         sl_result getDeviceInfo(sl_lidar_response_device_info_t& info, \x1b[01;35m\x1b[Ksl_u32 timeout = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[4.601223] (sllidar_ros2) StderrLine: {'line': b'      |                                                                        \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.601864] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::checkMotorCtrlSupport(sl::MotorCtrlSupport&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.602073] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:592:76:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.602251] (sllidar_ros2) StderrLine: {'line': b'  592 |         sl_result checkMotorCtrlSupport(MotorCtrlSupport & support, \x1b[01;35m\x1b[Ksl_u32 timeout = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[4.602384] (sllidar_ros2) StderrLine: {'line': b'      |                                                                     \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.602591] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getFrequency(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.602802] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:627:110:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knodes\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.602945] (sllidar_ros2) StderrLine: {'line': b'  627 |         sl_result getFrequency(const LidarScanMode& scanMode, \x1b[01;35m\x1b[Kconst sl_lidar_response_measurement_node_hq_t* nodes\x1b[m\x1b[K, size_t count, float& frequency)\n'}
+[4.603075] (sllidar_ros2) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[4.603204] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getHealth(sl_lidar_response_device_health_t&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.603332] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:640:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.603458] (sllidar_ros2) StderrLine: {'line': b'  640 |         sl_result getHealth(sl_lidar_response_device_health_t& health, \x1b[01;35m\x1b[Ksl_u32 timeout = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[4.603577] (sllidar_ros2) StderrLine: {'line': b'      |                                                                        \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.605711] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getMotorInfo(sl::LidarMotorInfo&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.605991] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:730:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.606174] (sllidar_ros2) StderrLine: {'line': b'  730 |         sl_result getMotorInfo(LidarMotorInfo &motorInfo, \x1b[01;35m\x1b[Ksl_u32 timeoutInMs\x1b[m\x1b[K)\n'}
+[4.606347] (sllidar_ros2) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.608855] (-) TimerEvent: {}
+[4.617773] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ksl_result sl::SlamtecLidarDriver::_sendCommand(sl_u16, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.618025] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1089:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.618178] (sllidar_ros2) StderrLine: {'line': b' 1089 |             for (int pos = 0; \x1b[01;35m\x1b[Kpos < cmd_packet.size()\x1b[m\x1b[K; pos++) {\n'}
+[4.618320] (sllidar_ros2) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.618531] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1058:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kpkt_header\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.618673] (sllidar_ros2) StderrLine: {'line': b' 1058 |             sl_u8 \x1b[01;35m\x1b[Kpkt_header\x1b[m\x1b[K[10];\n'}
+[4.618802] (sllidar_ros2) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.624744] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::SlamtecLidarDriver::_ultraCapsuleToNormal(const sl_lidar_response_ultra_capsule_measurement_nodes_t&, sl_lidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.625109] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1370:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.625358] (sllidar_ros2) StderrLine: {'line': b' 1370 |                     if ((\x1b[01;35m\x1b[Kdist_predict1 == 0xFFFFFE00\x1b[m\x1b[K) || (dist_predict1 == 0x1FF)) {\n'}
+[4.625569] (sllidar_ros2) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.625783] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1379:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.625969] (sllidar_ros2) StderrLine: {'line': b' 1379 |                     if ((\x1b[01;35m\x1b[Kdist_predict2 == 0xFFFFFE00\x1b[m\x1b[K) || (dist_predict2 == 0x1FF)) {\n'}
+[4.626127] (sllidar_ros2) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.632600] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::SlamtecLidarDriver::_dense_capsuleToNormal(const sl_lidar_response_capsule_measurement_nodes_t&, sl_lidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.632948] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1577:116:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on cast result type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[4.633111] (sllidar_ros2) StderrLine: {'line': b' 1577 |                     const int dist = static_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.633251] (sllidar_ros2) StderrLine: {'line': b'      |                                                                                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.658324] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[4.658803] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[4.659039] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:34\x1b[m\x1b[K:\n'}
+[4.659244] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.659412] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.659550] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.660831] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[4.661191] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:34\x1b[m\x1b[K:\n'}
+[4.661466] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.661744] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.661971] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.669449] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::UdpChannel::setStatus(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.669739] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:103:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.669906] (sllidar_ros2) StderrLine: {'line': b'  103 |         void setStatus(\x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K){}\n'}
+[4.670012] (sllidar_ros2) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.709360] (-) TimerEvent: {}
+[4.718803] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[4.719127] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[4.719328] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:34\x1b[m\x1b[K:\n'}
+[4.719523] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.719693] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.719838] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.721234] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[4.721598] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:34\x1b[m\x1b[K:\n'}
+[4.721813] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.722003] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.722155] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.809470] (-) TimerEvent: {}
+[4.826165] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[4.826404] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[4.826544] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:34\x1b[m\x1b[K:\n'}
+[4.826663] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.827029] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.827174] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.827307] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[4.827429] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:34\x1b[m\x1b[K:\n'}
+[4.827546] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.827668] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.827781] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.828783] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K At global scope:\n'}
+[4.829048] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:72:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid sl::convert(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[4.829194] (sllidar_ros2) StderrLine: {'line': b'   72 |     static void \x1b[01;35m\x1b[Kconvert\x1b[m\x1b[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)\n'}
+[4.829315] (sllidar_ros2) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.829443] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:59:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid sl::printDeprecationWarn(const char*, const char*)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[4.829577] (sllidar_ros2) StderrLine: {'line': b'   59 |     static void \x1b[01;35m\x1b[KprintDeprecationWarn\x1b[m\x1b[K(const char* fn, const char* replacement)\n'}
+[4.829698] (sllidar_ros2) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.834737] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::TcpChannel::setStatus(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.835505] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:95:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.835824] (sllidar_ros2) StderrLine: {'line': b'   95 |         void setStatus(\x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K){}\n'}
+[4.836001] (sllidar_ros2) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.909568] (-) TimerEvent: {}
+[5.010077] (-) TimerEvent: {}
+[5.110519] (-) TimerEvent: {}
+[5.210901] (-) TimerEvent: {}
+[5.311385] (-) TimerEvent: {}
+[5.412245] (-) TimerEvent: {}
+[5.512612] (-) TimerEvent: {}
+[5.612980] (-) TimerEvent: {}
+[5.713277] (-) TimerEvent: {}
+[5.774422] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX static library libscanmatcher.a\x1b[0m\n'}
+[5.813394] (-) TimerEvent: {}
+[5.814576] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] Built target scanmatcher\n'}
+[5.827416] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gridfastslam\x1b[0m\n'}
+[5.850495] (openslam_gmapping) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o\x1b[0m\n'}
+[5.850890] (openslam_gmapping) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o\x1b[0m\n'}
+[5.852026] (openslam_gmapping) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o\x1b[0m\n'}
+[5.855530] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o\x1b[0m\n'}
+[5.913506] (-) TimerEvent: {}
+[6.013933] (-) TimerEvent: {}
+[6.114270] (-) TimerEvent: {}
+[6.205484] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[6.205835] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[6.205983] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[6.206122] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/src/sllidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[6.206245] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.206379] (sllidar_ros2) StderrLine: {'line': b'   58 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[6.206634] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.206763] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[6.206884] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[6.207007] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/src/sllidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[6.207128] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.207260] (sllidar_ros2) StderrLine: {'line': b'  295 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[6.207384] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.214391] (-) TimerEvent: {}
+[6.314784] (-) TimerEvent: {}
+[6.415192] (-) TimerEvent: {}
+[6.515662] (-) TimerEvent: {}
+[6.616028] (-) TimerEvent: {}
+[6.716936] (-) TimerEvent: {}
+[6.817373] (-) TimerEvent: {}
+[6.917828] (-) TimerEvent: {}
+[7.018218] (-) TimerEvent: {}
+[7.118654] (-) TimerEvent: {}
+[7.219063] (-) TimerEvent: {}
+[7.319478] (-) TimerEvent: {}
+[7.419851] (-) TimerEvent: {}
+[7.520211] (-) TimerEvent: {}
+[7.620770] (-) TimerEvent: {}
+[7.721075] (-) TimerEvent: {}
+[7.821443] (-) TimerEvent: {}
+[7.921807] (-) TimerEvent: {}
+[8.022196] (-) TimerEvent: {}
+[8.040318] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/src/sllidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool SLlidarNode::checkSLLIDARHealth(sl::ILidarDriver*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.040546] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/sllidar_ros2/src/sllidar_node.cpp:147:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[8.040642] (sllidar_ros2) StderrLine: {'line': b'  147 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[8.040721] (sllidar_ros2) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.122283] (-) TimerEvent: {}
+[8.222611] (-) TimerEvent: {}
+[8.323152] (-) TimerEvent: {}
+[8.423440] (-) TimerEvent: {}
+[8.523774] (-) TimerEvent: {}
+[8.620117] (openslam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libgridfastslam.a\x1b[0m\n'}
+[8.623869] (-) TimerEvent: {}
+[8.666517] (openslam_gmapping) StdoutLine: {'line': b'[100%] Built target gridfastslam\n'}
+[8.681675] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[8.711335] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'install'}
+[8.724466] (-) TimerEvent: {}
+[8.725070] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hjf/auto/rplidar-ros2/build/openslam_gmapping'], 'cwd': '/home/hjf/auto/rplidar-ros2/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'hjf'), ('SSH_AGENT_PID', '1786'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hjf'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1606'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hjf'), ('JOURNAL_STREAM', '8:47612'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hjf-NBLB-WAX9N:@/tmp/.ICE-unix/1824,unix/hjf-NBLB-WAX9N:/tmp/.ICE-unix/1824'), ('INVOCATION_ID', '9ecbbc03209e48358979a7501984b25c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44f8e9c8_c694_4733_afbc_ec358c295741'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hjf/auto/rplidar-ros2/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[8.738797] (openslam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.739050] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[8.739186] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[8.739486] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include/\n'}
+[8.739772] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping\n'}
+[8.740049] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/log\n'}
+[8.740347] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/log/sensorlog.h\n'}
+[8.740735] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/log/configuration.h\n'}
+[8.740959] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/gridfastslam\n'}
+[8.741054] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h\n'}
+[8.741133] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h\n'}
+[8.741209] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx\n'}
+[8.741442] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/particlefilter\n'}
+[8.741743] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h\n'}
+[8.741918] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/scanmatcher\n'}
+[8.742020] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h\n'}
+[8.742098] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h\n'}
+[8.742170] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h\n'}
+[8.742277] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor\n'}
+[8.742345] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_range\n'}
+[8.742444] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h\n'}
+[8.742593] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h\n'}
+[8.742717] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_base\n'}
+[8.742879] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h\n'}
+[8.743032] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h\n'}
+[8.743147] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry\n'}
+[8.743254] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h\n'}
+[8.743330] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h\n'}
+[8.743438] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/grid\n'}
+[8.743560] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/grid/map.h\n'}
+[8.743657] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/grid/harray2d.h\n'}
+[8.743725] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/grid/accessstate.h\n'}
+[8.743825] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/grid/array2d.h\n'}
+[8.743930] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/utils\n'}
+[8.744109] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/utils/autoptr.h\n'}
+[8.744222] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/utils/gvalues.h\n'}
+[8.744440] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/utils/macro_params.h\n'}
+[8.744606] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/utils/commandline.h\n'}
+[8.744794] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/utils/point.h\n'}
+[8.745020] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/include//gmapping/utils/stat.h\n'}
+[8.745198] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping\n'}
+[8.745399] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping\n'}
+[8.745551] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh\n'}
+[8.745756] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv\n'}
+[8.745927] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh\n'}
+[8.746133] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv\n'}
+[8.746349] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash\n'}
+[8.746664] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh\n'}
+[8.747637] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh\n'}
+[8.747894] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv\n'}
+[8.748063] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/package.dsv\n'}
+[8.748216] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping\n'}
+[8.748365] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.748737] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.748938] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake\n'}
+[8.749072] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake\n'}
+[8.749245] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/package.xml\n'}
+[8.749477] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib/libgridfastslam.a\n'}
+[8.749743] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib/libscanmatcher.a\n'}
+[8.749953] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[8.750097] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[8.750233] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib/libsensor_base.a\n'}
+[8.750357] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[8.751558] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[8.752104] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib/libsensor_odometry.a\n'}
+[8.752544] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib/libsensor_range.a\n'}
+[8.752762] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib/libutils.a\n'}
+[8.752904] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[8.753025] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[8.754133] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[8.824601] (-) TimerEvent: {}
+[8.832281] (openslam_gmapping) JobEnded: {'identifier': 'openslam_gmapping', 'rc': 0}
+[8.837728] (slam_gmapping) JobStarted: {'identifier': 'slam_gmapping'}
+[8.846405] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'cmake'}
+[8.846883] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/hjf/auto/rplidar-ros2/src/slam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/hjf/auto/rplidar-ros2/install/slam_gmapping'], 'cwd': '/home/hjf/auto/rplidar-ros2/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'hjf'), ('SSH_AGENT_PID', '1786'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hjf'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1606'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hjf'), ('JOURNAL_STREAM', '8:47612'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hjf-NBLB-WAX9N:@/tmp/.ICE-unix/1824,unix/hjf-NBLB-WAX9N:/tmp/.ICE-unix/1824'), ('INVOCATION_ID', '9ecbbc03209e48358979a7501984b25c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44f8e9c8_c694_4733_afbc_ec358c295741'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hjf/auto/rplidar-ros2/build/slam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy')]), 'shell': False}
+[8.920209] (slam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[8.924682] (-) TimerEvent: {}
+[8.992302] (slam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[8.998296] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[9.024800] (-) TimerEvent: {}
+[9.089910] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[9.091459] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[9.124894] (-) TimerEvent: {}
+[9.177223] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[9.199226] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[9.199771] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[9.204289] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[9.225189] (-) TimerEvent: {}
+[9.304499] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[9.306261] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.325286] (-) TimerEvent: {}
+[9.405598] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.422702] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.423728] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.425067] (slam_gmapping) StderrLine: {'line': b' -fuse-ld=lld -Wl,--disable-new-dtags\n'}
+[9.425344] (-) TimerEvent: {}
+[9.427129] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[9.460002] (slam_gmapping) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[9.460339] (slam_gmapping) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.525445] (-) TimerEvent: {}
+[9.625806] (-) TimerEvent: {}
+[9.726076] (-) TimerEvent: {}
+[9.734154] (slam_gmapping) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[9.782051] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.792962] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[9.824981] (sllidar_ros2) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable sllidar_node\x1b[0m\n'}
+[9.826170] (-) TimerEvent: {}
+[9.911012] (slam_gmapping) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[9.926256] (-) TimerEvent: {}
+[9.962652] (slam_gmapping) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[10.026369] (-) TimerEvent: {}
+[10.093133] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.126470] (-) TimerEvent: {}
+[10.171188] (slam_gmapping) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[10.223628] (sllidar_ros2) StdoutLine: {'line': b'[ 92%] Built target sllidar_node\n'}
+[10.226577] (-) TimerEvent: {}
+[10.326929] (-) TimerEvent: {}
+[10.370415] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[10.390433] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[10.427020] (-) TimerEvent: {}
+[10.476501] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[10.478612] (slam_gmapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.480079] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[10.527151] (-) TimerEvent: {}
+[10.582254] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.582555] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.627258] (-) TimerEvent: {}
+[10.676150] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[10.676477] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[10.727343] (-) TimerEvent: {}
+[10.746781] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[10.746968] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[10.827423] (-) TimerEvent: {}
+[10.832481] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[10.834048] (slam_gmapping) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.927513] (-) TimerEvent: {}
+[11.027790] (-) TimerEvent: {}
+[11.128086] (-) TimerEvent: {}
+[11.228381] (-) TimerEvent: {}
+[11.243059] (sllidar_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sllidar_client\x1b[0m\n'}
+[11.328501] (-) TimerEvent: {}
+[11.428869] (-) TimerEvent: {}
+[11.520312] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[11.528977] (-) TimerEvent: {}
+[11.534024] (slam_gmapping) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[11.539630] (slam_gmapping) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[11.578790] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_client\n'}
+[11.578996] (slam_gmapping) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[11.591715] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[11.629088] (-) TimerEvent: {}
+[11.634605] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[11.635030] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2'], 'cwd': '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'hjf'), ('SSH_AGENT_PID', '1786'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hjf'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1606'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hjf'), ('JOURNAL_STREAM', '8:47612'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hjf-NBLB-WAX9N:@/tmp/.ICE-unix/1824,unix/hjf-NBLB-WAX9N:/tmp/.ICE-unix/1824'), ('INVOCATION_ID', '9ecbbc03209e48358979a7501984b25c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44f8e9c8_c694_4733_afbc_ec358c295741'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[11.645581] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.645886] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch\n'}
+[11.646309] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_launch.py\n'}
+[11.646869] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/gmapping_launch.py\n'}
+[11.647243] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py\n'}
+[11.647784] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py\n'}
+[11.648181] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py\n'}
+[11.648553] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py\n'}
+[11.648902] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py\n'}
+[11.649737] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py\n'}
+[11.650177] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/gmapping_s2_launch.py\n'}
+[11.650528] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py\n'}
+[11.650880] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_launch.py\n'}
+[11.651280] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py\n'}
+[11.651629] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py\n'}
+[11.652049] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py\n'}
+[11.652421] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/rviz\n'}
+[11.652784] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[11.653253] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_gmapping_ros2.rviz\n'}
+[11.654553] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node\n'}
+[11.655772] (sllidar_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/hjf/auto/rplidar-ros2/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node" to ""\n'}
+[11.656150] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client\n'}
+[11.657621] (sllidar_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/hjf/auto/rplidar-ros2/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client" to ""\n'}
+[11.657891] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[11.658086] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[11.658287] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[11.658384] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[11.658662] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh\n'}
+[11.658845] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv\n'}
+[11.659040] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash\n'}
+[11.659512] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh\n'}
+[11.659675] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh\n'}
+[11.659836] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv\n'}
+[11.659991] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/package.dsv\n'}
+[11.660186] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[11.660355] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.660478] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.660583] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[11.660692] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[11.660792] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/hjf/auto/rplidar-ros2/install/sllidar_ros2/share/sllidar_ros2/package.xml\n'}
+[11.662406] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[11.679240] (slam_gmapping) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[11.729290] (-) TimerEvent: {}
+[11.738580] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[11.782741] (slam_gmapping) StdoutLine: {'line': b'-- Found openslam_gmapping: 0.1.2 (/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/share/openslam_gmapping/cmake)\n'}
+[11.786647] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[11.829370] (-) TimerEvent: {}
+[11.889446] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[11.890088] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/hjf/auto/rplidar-ros2/src/slam_gmapping/include\n'}
+[11.890227] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[11.891028] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[11.891905] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[11.892588] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[11.893787] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[11.893954] (slam_gmapping) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[11.894465] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[11.897896] (slam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.929450] (-) TimerEvent: {}
+[11.931399] (slam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[11.933427] (slam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/hjf/auto/rplidar-ros2/build/slam_gmapping\n'}
+[11.948332] (slam_gmapping) CommandEnded: {'returncode': 0}
+[11.949229] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'build'}
+[11.949275] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hjf/auto/rplidar-ros2/build/slam_gmapping', '--', '-j8', '-l8'], 'cwd': '/home/hjf/auto/rplidar-ros2/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'hjf'), ('SSH_AGENT_PID', '1786'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hjf'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1606'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hjf'), ('JOURNAL_STREAM', '8:47612'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hjf-NBLB-WAX9N:@/tmp/.ICE-unix/1824,unix/hjf-NBLB-WAX9N:/tmp/.ICE-unix/1824'), ('INVOCATION_ID', '9ecbbc03209e48358979a7501984b25c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44f8e9c8_c694_4733_afbc_ec358c295741'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hjf/auto/rplidar-ros2/build/slam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a8e318dc7e4ad096322befe8633bccb3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy')]), 'shell': False}
+[11.996695] (slam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target slam_gmapping\x1b[0m\n'}
+[11.996960] (slam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target scan_dilute\x1b[0m\n'}
+[11.997075] (slam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target transform\x1b[0m\n'}
+[12.029578] (-) TimerEvent: {}
+[12.036659] (slam_gmapping) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/scan_dilute.dir/src/scan_dilute.cpp.o\x1b[0m\n'}
+[12.044570] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjf/auto/rplidar-ros2/src/slam_gmapping/src/scan_dilute.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksensor_msgs/msg/laser_scan__struct.hpp: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[12.044798] (slam_gmapping) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K<sensor_msgs/msg/laser_scan__struct.hpp>\x1b[m\x1b[K\n'}
+[12.044904] (slam_gmapping) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.045011] (slam_gmapping) StderrLine: {'line': b'compilation terminated.\n'}
+[12.045684] (slam_gmapping) StderrLine: {'line': b'make[2]: *** [CMakeFiles/scan_dilute.dir/build.make:63\xef\xbc\x9aCMakeFiles/scan_dilute.dir/src/scan_dilute.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[12.045913] (slam_gmapping) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:82\xef\xbc\x9aCMakeFiles/scan_dilute.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[12.046081] (slam_gmapping) StderrLine: {'line': b'make[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[12.072444] (slam_gmapping) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o\x1b[0m\n'}
+[12.072691] (slam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/transform.dir/src/transform.cpp.o\x1b[0m\n'}
+[12.129681] (-) TimerEvent: {}
+[12.229908] (-) TimerEvent: {}
+[12.330194] (-) TimerEvent: {}
+[12.430465] (-) TimerEvent: {}
+[12.530979] (-) TimerEvent: {}
+[12.631239] (-) TimerEvent: {}
+[12.731488] (-) TimerEvent: {}
+[12.831818] (-) TimerEvent: {}
+[12.932140] (-) TimerEvent: {}
+[13.032454] (-) TimerEvent: {}
+[13.132744] (-) TimerEvent: {}
+[13.232990] (-) TimerEvent: {}
+[13.333259] (-) TimerEvent: {}
+[13.433539] (-) TimerEvent: {}
+[13.533804] (-) TimerEvent: {}
+[13.634075] (-) TimerEvent: {}
+[13.734413] (-) TimerEvent: {}
+[13.834846] (-) TimerEvent: {}
+[13.935394] (-) TimerEvent: {}
+[14.035879] (-) TimerEvent: {}
+[14.136279] (-) TimerEvent: {}
+[14.236566] (-) TimerEvent: {}
+[14.336945] (-) TimerEvent: {}
+[14.437337] (-) TimerEvent: {}
+[14.537678] (-) TimerEvent: {}
+[14.638037] (-) TimerEvent: {}
+[14.738378] (-) TimerEvent: {}
+[14.838750] (-) TimerEvent: {}
+[14.939126] (-) TimerEvent: {}
+[15.039476] (-) TimerEvent: {}
+[15.139938] (-) TimerEvent: {}
+[15.240565] (-) TimerEvent: {}
+[15.341053] (-) TimerEvent: {}
+[15.441356] (-) TimerEvent: {}
+[15.541757] (-) TimerEvent: {}
+[15.642013] (-) TimerEvent: {}
+[15.742308] (-) TimerEvent: {}
+[15.842593] (-) TimerEvent: {}
+[15.942855] (-) TimerEvent: {}
+[16.043151] (-) TimerEvent: {}
+[16.143613] (-) TimerEvent: {}
+[16.244635] (-) TimerEvent: {}
+[16.344966] (-) TimerEvent: {}
+[16.445310] (-) TimerEvent: {}
+[16.545709] (-) TimerEvent: {}
+[16.646107] (-) TimerEvent: {}
+[16.746475] (-) TimerEvent: {}
+[16.846730] (-) TimerEvent: {}
+[16.947016] (-) TimerEvent: {}
+[17.047653] (-) TimerEvent: {}
+[17.148061] (-) TimerEvent: {}
+[17.248400] (-) TimerEvent: {}
+[17.348737] (-) TimerEvent: {}
+[17.432270] (slam_gmapping) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable transform\x1b[0m\n'}
+[17.448832] (-) TimerEvent: {}
+[17.549128] (-) TimerEvent: {}
+[17.649454] (-) TimerEvent: {}
+[17.749822] (-) TimerEvent: {}
+[17.821833] (slam_gmapping) StdoutLine: {'line': b'[ 66%] Built target transform\n'}
+[17.849921] (-) TimerEvent: {}
+[17.950233] (-) TimerEvent: {}
+[18.050563] (-) TimerEvent: {}
+[18.150854] (-) TimerEvent: {}
+[18.251125] (-) TimerEvent: {}
+[18.351425] (-) TimerEvent: {}
+[18.451716] (-) TimerEvent: {}
+[18.552027] (-) TimerEvent: {}
+[18.652299] (-) TimerEvent: {}
+[18.752568] (-) TimerEvent: {}
+[18.852880] (-) TimerEvent: {}
+[18.953090] (-) TimerEvent: {}
+[19.053368] (-) TimerEvent: {}
+[19.153713] (-) TimerEvent: {}
+[19.254082] (-) TimerEvent: {}
+[19.354306] (-) TimerEvent: {}
+[19.454558] (-) TimerEvent: {}
+[19.555059] (-) TimerEvent: {}
+[19.655309] (-) TimerEvent: {}
+[19.755569] (-) TimerEvent: {}
+[19.855810] (-) TimerEvent: {}
+[19.956095] (-) TimerEvent: {}
+[20.056427] (-) TimerEvent: {}
+[20.156761] (-) TimerEvent: {}
+[20.257053] (-) TimerEvent: {}
+[20.357347] (-) TimerEvent: {}
+[20.457765] (-) TimerEvent: {}
+[20.558056] (-) TimerEvent: {}
+[20.658393] (-) TimerEvent: {}
+[20.759072] (-) TimerEvent: {}
+[20.859446] (-) TimerEvent: {}
+[20.959742] (-) TimerEvent: {}
+[21.060054] (-) TimerEvent: {}
+[21.160348] (-) TimerEvent: {}
+[21.260736] (-) TimerEvent: {}
+[21.361083] (-) TimerEvent: {}
+[21.461643] (-) TimerEvent: {}
+[21.561969] (-) TimerEvent: {}
+[21.662312] (-) TimerEvent: {}
+[21.762765] (-) TimerEvent: {}
+[21.863056] (-) TimerEvent: {}
+[21.963354] (-) TimerEvent: {}
+[22.064165] (-) TimerEvent: {}
+[22.164866] (-) TimerEvent: {}
+[22.265156] (-) TimerEvent: {}
+[22.365417] (-) TimerEvent: {}
+[22.465701] (-) TimerEvent: {}
+[22.565983] (-) TimerEvent: {}
+[22.666301] (-) TimerEvent: {}
+[22.766538] (-) TimerEvent: {}
+[22.866825] (-) TimerEvent: {}
+[22.967105] (-) TimerEvent: {}
+[23.067372] (-) TimerEvent: {}
+[23.167676] (-) TimerEvent: {}
+[23.268038] (-) TimerEvent: {}
+[23.368473] (-) TimerEvent: {}
+[23.468850] (-) TimerEvent: {}
+[23.569155] (-) TimerEvent: {}
+[23.669460] (-) TimerEvent: {}
+[23.769747] (-) TimerEvent: {}
+[23.870004] (-) TimerEvent: {}
+[23.970349] (-) TimerEvent: {}
+[24.070651] (-) TimerEvent: {}
+[24.170903] (-) TimerEvent: {}
+[24.271174] (-) TimerEvent: {}
+[24.371466] (-) TimerEvent: {}
+[24.465193] (slam_gmapping) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable slam_gmapping\x1b[0m\n'}
+[24.471574] (-) TimerEvent: {}
+[24.571844] (-) TimerEvent: {}
+[24.672164] (-) TimerEvent: {}
+[24.772818] (-) TimerEvent: {}
+[24.873134] (-) TimerEvent: {}
+[24.973454] (-) TimerEvent: {}
+[25.073859] (-) TimerEvent: {}
+[25.174247] (-) TimerEvent: {}
+[25.185424] (slam_gmapping) StdoutLine: {'line': b'[ 83%] Built target slam_gmapping\n'}
+[25.186714] (slam_gmapping) StderrLine: {'line': b'make: *** [Makefile:141\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[25.188794] (slam_gmapping) CommandEnded: {'returncode': 2}
+[25.231308] (slam_gmapping) JobEnded: {'identifier': 'slam_gmapping', 'rc': 2}
+[25.241946] (-) EventReactorShutdown: {}

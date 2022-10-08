@@ -1,0 +1,28 @@
+[0.012s] Invoking command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/home/hjf/auto/rplidar-ros2/install/sllidar_ros2:/home/hjf/auto/rplidar-ros2/install/slam_gmapping:/home/hjf/auto/rplidar-ros2/install/cartographer_test:/opt/ros/foxy /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/slam_gmapping -- -j8 -l8
+[0.069s] [ 33%] Built target scan_dilute
+[0.071s] [ 66%] Built target slam_gmapping
+[0.076s] [100%] Built target transform
+[0.087s] Invoked command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/home/hjf/auto/rplidar-ros2/install/sllidar_ros2:/home/hjf/auto/rplidar-ros2/install/slam_gmapping:/home/hjf/auto/rplidar-ros2/install/cartographer_test:/opt/ros/foxy /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/slam_gmapping -- -j8 -l8
+[0.112s] Invoking command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/home/hjf/auto/rplidar-ros2/install/sllidar_ros2:/home/hjf/auto/rplidar-ros2/install/slam_gmapping:/home/hjf/auto/rplidar-ros2/install/cartographer_test:/opt/ros/foxy /usr/bin/cmake --install /home/hjf/auto/rplidar-ros2/build/slam_gmapping
+[0.121s] -- Install configuration: ""
+[0.121s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+[0.122s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/transform
+[0.122s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/scan_dilute
+[0.122s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/launch
+[0.122s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+[0.122s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+[0.122s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+[0.123s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+[0.123s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+[0.123s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+[0.123s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+[0.123s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+[0.123s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+[0.123s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+[0.124s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+[0.127s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/package.dsv
+[0.127s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+[0.127s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+[0.127s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+[0.127s] -- Up-to-date: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/package.xml
+[0.128s] Invoked command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/home/hjf/auto/rplidar-ros2/install/sllidar_ros2:/home/hjf/auto/rplidar-ros2/install/slam_gmapping:/home/hjf/auto/rplidar-ros2/install/cartographer_test:/opt/ros/foxy /usr/bin/cmake --install /home/hjf/auto/rplidar-ros2/build/slam_gmapping

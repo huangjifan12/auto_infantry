@@ -1,0 +1,4 @@
+Invoking command in '/home/hjf/auto/rplidar-ros2/build/cartographer_test': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/cartographer_test -- -j8 -l8
+Invoked command in '/home/hjf/auto/rplidar-ros2/build/cartographer_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/cartographer_test -- -j8 -l8
+Invoking command in '/home/hjf/auto/rplidar-ros2/build/cartographer_test': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hjf/auto/rplidar-ros2/build/cartographer_test
+Invoked command in '/home/hjf/auto/rplidar-ros2/build/cartographer_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hjf/auto/rplidar-ros2/build/cartographer_test

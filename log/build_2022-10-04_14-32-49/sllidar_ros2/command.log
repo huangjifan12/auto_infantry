@@ -1,0 +1,6 @@
+Invoking command in '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/hjf/auto/rplidar-ros2/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/hjf/auto/rplidar-ros2/install/sllidar_ros2
+Invoked command in '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/hjf/auto/rplidar-ros2/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/hjf/auto/rplidar-ros2/install/sllidar_ros2
+Invoking command in '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/sllidar_ros2 -- -j8 -l8
+Invoked command in '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/sllidar_ros2 -- -j8 -l8
+Invoking command in '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hjf/auto/rplidar-ros2/build/sllidar_ros2
+Invoked command in '/home/hjf/auto/rplidar-ros2/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hjf/auto/rplidar-ros2/build/sllidar_ros2

@@ -1,0 +1,34 @@
+[0.012s] Invoking command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping': AMENT_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy LD_LIBRARY_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/slam_gmapping -- -j8 -l8
+[0.064s] [35m[1mScanning dependencies of target scan_dilute[0m
+[0.091s] [ 33%] Built target slam_gmapping
+[0.091s] [ 66%] Built target transform
+[0.092s] [ 83%] [32mBuilding CXX object CMakeFiles/scan_dilute.dir/src/scan_dilute.cpp.o[0m
+[6.686s] [100%] [32m[1mLinking CXX executable scan_dilute[0m
+[7.136s] [100%] Built target scan_dilute
+[7.150s] Invoked command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping' returned '0': AMENT_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy LD_LIBRARY_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/hjf/auto/rplidar-ros2/build/slam_gmapping -- -j8 -l8
+[7.184s] Invoking command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping': AMENT_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy LD_LIBRARY_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/hjf/auto/rplidar-ros2/build/slam_gmapping
+[7.195s] -- Install configuration: ""
+[7.195s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+[7.198s] -- Set runtime path of "/home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/slam_gmapping" to ""
+[7.198s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/transform
+[7.199s] -- Set runtime path of "/home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/transform" to ""
+[7.200s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/scan_dilute
+[7.202s] -- Set runtime path of "/home/hjf/auto/rplidar-ros2/install/slam_gmapping/lib/slam_gmapping/scan_dilute" to ""
+[7.202s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/launch
+[7.202s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+[7.202s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+[7.203s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+[7.203s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+[7.203s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+[7.203s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+[7.203s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+[7.204s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+[7.204s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+[7.204s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+[7.204s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+[7.204s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/package.dsv
+[7.205s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+[7.205s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+[7.205s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+[7.205s] -- Installing: /home/hjf/auto/rplidar-ros2/install/slam_gmapping/share/slam_gmapping/package.xml
+[7.211s] Invoked command in '/home/hjf/auto/rplidar-ros2/build/slam_gmapping' returned '0': AMENT_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping:/opt/ros/foxy LD_LIBRARY_PATH=/home/hjf/auto/rplidar-ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/hjf/auto/rplidar-ros2/build/slam_gmapping

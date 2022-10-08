@@ -1,0 +1,34 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hjf/auto/rplidar-ros2/build/cartographer_test
+-- Install configuration: ""
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/ament_index/resource_index/package_run_dependencies/cartographer_test
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/ament_index/resource_index/parent_prefix_path/cartographer_test
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/environment/ament_prefix_path.sh
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/environment/path.sh
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/environment/path.dsv
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/local_setup.bash
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/local_setup.sh
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/local_setup.zsh
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/local_setup.dsv
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/package.dsv
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/ament_index/resource_index/packages/cartographer_test
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/cmake/cartographer_testConfig.cmake
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/cmake/cartographer_testConfig-version.cmake
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/package.xml
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/launch
+-- Up-to-date: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/launch/cartographer_test.launch.py
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/config
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/config/trajectory_builder_2d.lua
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/config/map_builder.lua
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/config/rplidar_2d.lua
+-- Installing: /home/hjf/auto/rplidar-ros2/install/cartographer_test/share/cartographer_test/rviz
